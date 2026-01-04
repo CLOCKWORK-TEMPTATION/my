@@ -1,0 +1,79 @@
+# متطلبات التثبيت - Enhanced Architecture Analyzer
+
+## المكتبات المطلوبة (Python 3.11+)
+
+```
+# API & LLM
+openai>=1.32.0
+instructor>=1.13.0
+
+# Data Processing
+pydantic>=2.12.5
+pydantic-core>=2.18.0
+
+# Async & I/O
+aiofiles>=25.1.0
+
+# Environment & Configuration
+python-dotenv>=1.2.1
+
+# Display & Logging
+rich>=13.7.0
+
+# Utilities
+typing-extensions>=4.10.0
+```
+
+## تثبيت سريع
+
+### 1. إنشاء البيئة الافتراضية
+```bash
+python -m venv venv
+
+# على Windows:
+venv\Scripts\activate
+
+# على macOS/Linux:
+source venv/bin/activate
+```
+
+### 2. تثبيت المكتبات
+```bash
+# الطريقة الأولى: من ملف requirements
+pip install -r requirements.txt
+
+# أو التثبيت المباشر
+pip install openai>=1.32.0 instructor>=1.13.0 pydantic>=2.12.5 aiofiles>=25.1.0 python-dotenv>=1.2.1 rich>=13.7.0
+```
+
+### 3. إعدادات متغيرات البيئة
+```bash
+# إنشاء ملف .env
+cat > .env << EOF
+OPENAI_API_KEY=sk-proj-your-api-key-here
+EOF
+```
+
+## إصدارات موصى بها (يناير 2026)
+
+| المكتبة | الإصدار الموصى به | الحد الأدنى |
+|---------|------------------|----------|
+| openai | 1.40.0+ | 1.32.0 |
+| instructor | 1.13.0+ | 1.13.0 |
+| pydantic | 2.12.5+ | 2.12.0 |
+| aiofiles | 25.1.0+ | 24.0.0 |
+| python-dotenv | 1.2.1+ | 1.0.0 |
+| rich | 13.7.0+ | 13.0.0 |
+
+## ملاحظات مهمة
+
+⚠️ **تأكد من استخدام Python 3.11+** - الكود يستخدم features حديثة
+
+✅ **تحديث منتظم للمكتبات** - استخدم:
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+🔐 **أمان API Key** - لا تضع API Key في الكود مباشرة، استخدم .env فقط
+
+🌍 **الدعم الكامل للعربية** - جميع الرسائل والمخرجات تدعم اللغة العربية الكاملة

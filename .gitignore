@@ -1,0 +1,41 @@
+# Go Binaries
+/main
+*.exe
+*.test
+*.out
+*.dll
+*.so
+*.dylib
+
+# Go Modules
+vendor/
+go.work
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.pytest_cache/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.env
+
+# Logs & Temporary Files
+*.log
+tmp/
+temp/
+
+# OS & IDE System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Project Outputs (Generated Reports)
+System_Architecture_Analysis.md
