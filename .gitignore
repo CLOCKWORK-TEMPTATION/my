@@ -39,3 +39,6 @@ Thumbs.db
 
 # Project Outputs (Generated Reports)
 System_Architecture_Analysis.md
+
+.gemini/
+gha-creds-*.json
