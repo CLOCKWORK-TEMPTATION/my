@@ -4,4 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "openai>=1.32.0",
+    "instructor>=1.13.0",
+    "pydantic>=2.12.5",
+    "pydantic-core>=2.18.0",
+    "aiofiles>=25.1.0",
+    "python-dotenv>=1.2.1",
+    "rich>=13.7.0",
+    "typing-extensions>=4.10.0",
+]
